@@ -1,0 +1,10 @@
+# AI.TXT
+# Spawning AI / Prevent datasets from using
+# the following file types
+
+User-Agent: *
+Disallow: *.gif
+Disallow: *.jpg
+Disallow: *.png
+Disallow: *.mp3
+Disallow: *.mp4
