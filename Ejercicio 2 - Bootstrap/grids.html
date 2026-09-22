@@ -21,15 +21,15 @@
   <body>
     <h1>Grids</h1>
       <ul>
-        <li>6 puntos responsivos basados en en el ancho mínimo (min-width) de los dispositivos (.col-*): xs (≥0px), sm (≥576px), md (≥768px), lg (≥992px), xl (≥1200px), xxl (≥1400px). Afectan al suyo y a los superiores.</li>
+        <li>6 puntos responsivos basados en en el ancho mínimo (<code>min-width</code>) de los dispositivos (<code>.col-*</code>): <code>xs</code> (≥0px), <code>sm</code> (≥576px), <code>md</code> (≥768px), <code>lg</code> (≥992px), <code>xl</code> (≥1200px), <code>xxl</code> (≥1400px). Afectan al suyo y a los superiores.</li>
         <li>Los contenedores centran y limitan el ancho del contenido, pudiendo ser responsivos, completamente anchos o fluidos entre ambos.</li>
         <li>Las filas son contenedores de columnas = Padding horizontal (gutter) de .75 rem a cada lado en las columnas con márgenes negativos en las filas (alineación abajo a la izquierda).</li>
         <li>Columnas increíblemente flexibles, con hasta 12 por fila, teniendo clases que indican el nº de columnas que ocupa un elemento y anchos porcentuales.</li>
-        <li>Gutters responsivos y personalizables mediante clases: .g-0, -g-*, .-gx-*, .-gy-*...</li>
+        <li>Gutters responsivos y personalizables mediante clases: <code>.g-0</code>, <code>-g-*</code>, <code>.-gx-*</code>, <code>.-gy-*</code>...</li>
         <li>Variables Sass (y CSS), mapas y mixins.</li>
       </ul>
 
-      <h2>Columnas de disposición automática (.col)</h2>
+      <h2>Columnas de disposición automática (<code>.col</code>)</h2>
         <h3>Mismo ancho de columna</h3>
           <div class="container text-center">
             <div class="row">
@@ -54,7 +54,7 @@
           </div>
         <br>
       
-        <h3>Solo un ancho de columna especificado (.col-{size (1-12)})</h3>
+        <h3>Solo un ancho de columna especificado (<code>.col-{size (1-12)}</code>)</h3>
           <div class="container text-center">
             <div class="row">
               <div class="col border">
@@ -81,14 +81,14 @@
           </div>
         <br>
         
-        <h3>Columnas de ancho variable ajustadas al de su contenido (.col-{breakpoint}-auto)</h3>
+        <h3>Columnas de ancho variable ajustadas al de su contenido (<code>.col-{breakpoint}-auto</code>)</h3>
           <div class="container text-center">
             <div class="row justify-content-md-center">
               <div class="col col-lg-2 border">
                 1 of 3
               </div>
               <div class="col-md-auto border">
-                Variable width content
+                Contenido de ancho variable
               </div>
               <div class="col col-lg-2 border">
                 3 of 3
@@ -99,7 +99,7 @@
                 1 of 3
               </div>
               <div class="col-md-auto border">
-                Variable width content
+                Contenido de ancho variable
               </div>
               <div class="col col-lg-2 border">
                 3 of 3
@@ -109,31 +109,31 @@
         <br>
 
       <h2>Clases responsivas</h2>
-        <h3>Misma disposición para todos los tamaños de pantalla (usar solo las clases .col y .col-*)</h3>
+        <h3>Misma disposición para todos los tamaños de pantalla (usar solo las clases <code>.col</code> y <code>.col-*</code>)</h3>
           <div class="container text-center">
             <div class="row">
-              <div class="col border">col</div>
-              <div class="col border">col</div>
-              <div class="col border">col</div>
-              <div class="col border">col</div>
+              <div class="col border"><code>.col</code></div>
+              <div class="col border"><code>.col</code></div>
+              <div class="col border"><code>.col</code></div>
+              <div class="col border"><code>.col</code></div>
             </div>
             <div class="row">
-              <div class="col-8 border">col-8</div>
-              <div class="col-4 border">col-4</div>
+              <div class="col-8 border"><code>.col-8</code></div>
+              <div class="col-4 border"><code>.col-4</code></div>
             </div>
           </div>
         <br>
 
-        <h3>De columnas apiladas a horizontales a mayor ancho de pantalla (usar solo la clase .col-sm-*)</h3>
+        <h3>De columnas apiladas a horizontales a mayor ancho de pantalla (usar solo la clase <code>.col-sm-*</code>)</h3>
           <div class="container text-center">
               <div class="row">
-                <div class="col-sm-8 border">col-sm-8</div>
-                <div class="col-sm-4 border">col-sm-4</div>
+                <div class="col-sm-8 border"><code>.col-sm-8</code></div>
+                <div class="col-sm-4 border"><code>.col-sm-4</code></div>
               </div>
               <div class="row">
-                <div class="col-sm border">col-sm</div>
-                <div class="col-sm border">col-sm</div>
-                <div class="col-sm border">col-sm</div>
+                <div class="col-sm border"><code>.col-sm</code></div>
+                <div class="col-sm border"><code>.col-sm</code></div>
+                <div class="col-sm border"><code>.col-sm</code></div>
               </div>
             </div>
           <br>
@@ -142,21 +142,21 @@
           <div class="container text-center">
             <!-- Las columnas se apilan en móvil al hacer para pantallas xs una 100% (sin especificar, por defecto) y la otra 50% (6 columnas)-->
             <div class="row">
-              <div class="col-md-8 border">.col-md-8</div>
-              <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
+              <div class="col-md-8 border"><code>.col-md-8</code></div>
+              <div class="col-6 col-md-4 border"><code>.col-6 .col-md-4</code></div>
             </div>
 
             <!-- Las columnas empiezan al 50% en móvil (pantallas xs) y se expanden a 33.3% (12/4) en escritorio -->
             <div class="row">
-              <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
-              <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
-              <div class="col-6 col-md-4 border">.col-6 .col-md-4</div>
+              <div class="col-6 col-md-4 border"><code>.col-6 .col-md-4</code></div>
+              <div class="col-6 col-md-4 border"><code>.col-6 .col-md-4</code></div>
+              <div class="col-6 col-md-4 border"><code>.col-6 .col-md-4</code></div>
             </div>
 
             <!-- Siempre 50% (6/12) de ancho, móvil y escritorio -->
             <div class="row">
-              <div class="col-6 border">.col-6</div>
-              <div class="col-6 border">.col-6</div>
+              <div class="col-6 border"><code>.col-6</code></div>
+              <div class="col-6 border"><code>.col-6</code></div>
             </div>
           </div>
         <br>
@@ -212,15 +212,15 @@
           <div class="container text-center">
             <div class="row border">
               <div class="col-sm-3 border">
-                Level 1: .col-sm-3
+                Nivel 1: <code>.col-sm-3</code>
               </div>
               <div class="col-sm-9 border">
                 <div class="row border">                  <!-- Como con las columnas dentro de las filas, los bordes también se acumulan -->
                   <div class="col-8 col-sm-6 border">
-                    Level 2: .col-8 .col-sm-6
+                    Nivel 2: <code>.col-8 .col-sm-6</code>
                   </div>
                   <div class="col-4 col-sm-6 border">
-                    Level 2: .col-4 .col-sm-6
+                    Nivel 2: <code>.col-4 .col-sm-6</code>
                   </div>
                 </div>
               </div>

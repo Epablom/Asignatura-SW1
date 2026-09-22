@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html [lang="es"]>
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Bootstrap, HTML, CSS, JavaScript">
+    <meta name="description" content="Ejercicio 2 SW1 - Bootstrap: Acordeones">
+    <meta name="author" content="Eugenio Pablo Murillo Solanas">
+
+    <title>Bootstrap - Acordeones</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href=".\bootstrap_icon.ico">
+  </head>
+  
+
+  <!-- BODY -->
+  <body>
+    <h1>Acordeones</h1>
+      <p>Utilizan el plugin Collapse en JavaScript para permitir la construcción en vertical.</p>
+
+      <div class="accordion" id="accordionExample">   <!-- Añadir .accordion-flush a la clase permite quitar márgenes y esquinas redondeadas, de manera que se renderice pegado al contenedor padre-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">    <!-- Los acordeones cuentan con su propia guía de accesibilidad, pues esta también es dinámica con el plugin -->
+              Elemento Acordeón #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Primer elemento del cuerpo del acordeón.</strong> Se muestra por defecto (<code>.accordion-button</code> sin <code>.collapsed</code> y <code>.accordion-body</code> con <code>.show</code>), hasta que el plugin de colapse añade/elimina las clases apropiadas empleadas para dar estilo a cada elemento. Estas clases controlan la apariencia general, así como la visualización y ocultamiento a través de transiciones CSS. Se puede modificar cualquiera de estas con CSS personalizado o anulando las variables predeterminadas. También vale la pena mencionar que casi cualquier HTML puede ir dentro del <code>.accordion-body</code>, aunque la transición limita el desbordamiento.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Elemento Acordeón #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse">     <!-- Omitir el atributo data-bs-parent permite que el elemento del acordeón se comporte de manera independiente -->
+            <div class="accordion-body">
+              <strong>Segundo elemento del cuerpo del acordeón.</strong> Se oculta por defecto (<code>.accordion-button</code> con <code>.collapsed</code> y <code>.accordion-body</code> sin <code>.show</code>), hasta que el plugin de colapse añade/elimina las clases apropiadas empleadas para dar estilo a cada elemento. Estas clases controlan la apariencia general, así como la visualización y ocultamiento a través de transiciones CSS. Se puede modificar cualquiera de estas con CSS personalizado o anulando las variables predeterminadas. También vale la pena mencionar que casi cualquier HTML puede ir dentro del <code>.accordion-body</code>, aunque la transición limita el desbordamiento.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Elemento Acordeón #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Tercer elemento del cuerpo del acordeón.</strong> Se oculta por defecto (<code>.accordion-button</code> con <code>collapsed</code> y <code>.accordion-body</code> sin <code>show</code>), hasta que el plugin de colapse añade/elimina las clases apropiadas empleadas para dar estilo a cada elemento. Estas clases controlan la apariencia general, así como la visualización y ocultamiento a través de transiciones CSS. Se puede modificar cualquiera de estas con CSS personalizado o anulando las variables predeterminadas. También vale la pena mencionar que casi cualquier HTML puede ir dentro del <code>.accordion-body</code>, aunque la transición limita el desbordamiento.
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
