@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html [lang="es"]>
+
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Bootstrap, HTML, CSS, JavaScript">
+    <meta name="description" content="Ejercicio 2 SW1 - Bootstrap: Alertas">
+    <meta name="author" content="Eugenio Pablo Murillo Solanas">
+
+    <title>Bootstrap - Alertas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href=".\bootstrap_icon.ico">
+  </head>
+  
+
+  <!-- BODY -->
+  <body>
+    <h1>Alertas</h1>
+      <p>Pueden incluir iconos, cabeceras, párrafos, divisores, enlaces, botones... Útiles con JavaScript para hacerlas interactivas en directo</p>
+
+      <div class="alert alert-primary" role="alert">
+        An incomplete primary alert with <a href="#" class="alert-link">a matching color example link</a> and a closing/dismissing button.       <!-- .alert-dismissible es lo que coloca el botón en su lugar con padding añadido-->
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div class="alert alert-secondary alert-dismissible" role="alert">
+        An incomplete secondary alert with <a href="#" class="alert-link">a matching color example link</a> and a closing/dismissing button.     <!-- .btn-close es lo que define la clase y por tanto la apariencia del botón -->
+        <button type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div class="alert alert-success alert-dismissible" role="alert">
+        An incomplete success alert with <a href="#" class="alert-link">a matching color example link</a> and a closing/dismissing button.       <!-- .data-bs-dismiss es lo que permite cerrar la alerta -->
+        <button type="button" class="btn-close" aria-label="Close"></button>
+      </div>
+      <div class="alert alert-danger alert-dismissible" role="alert">
+        An incomplete danger alert with <a href="#" class="alert-link">a matching color example link</a> and a closing/dismissing button.        <!-- .aria-label es lo que permite que el lector de pantalla lea el botón como "Cerrar" -->
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        A simple warning alert with an icon, <a href="#" class="alert-link">a matching color example link</a> and a closing/dismissing button.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div class="alert alert-info alert-dismissible" role="alert">
+        A simple info alert with <a href="#" class="alert-link">a matching color example link</a> and a closing/dismissing button.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div class="alert alert-light alert-dismissible" role="alert">
+        A simple light alert with <a href="#" class="alert-link">a matching color example link</a> and a closing/dismissing button.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div class="alert alert-dark alert-dismissible" role="alert">
+        <h4 class="alert-heading">Dark alert</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <hr>
+        <p class="mb-0">A complex dark alert with a header, a divider, margin utilities, <a href="#" class="alert-link">a matching color example link</a> and a closing/dismissing button.</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
